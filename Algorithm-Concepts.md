@@ -6,5 +6,5 @@ QuickGraph contains a set of algorithms that solve classic graph theory problems
 * Vertex distances,
 * Time stampers
  
-_tip:_ The {{QuickGraph.Algorithms}} namespace contains a static class, [AlgorithmExtensions](AlgorithmExtensions), that contains a set of extension methods that encapsulate the creation and processing of algorithms instances.
+_tip:_ The `QuickGraph.Algorithms` namespace contains a static class, [AlgorithmExtensions](AlgorithmExtensions), that contains a set of extension methods that encapsulate the creation and processing of algorithms instances.
 
