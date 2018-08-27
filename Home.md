@@ -15,16 +15,16 @@
 
 ##### NuGet Instructions
 
-* {{PM> Install-Package QuickGraph}}
+* `PM> Install-Package QuickGraph`
 
 ##### A simple example
 This example takes a DataSet, builds the graph of table and constraints from the schema and computes the table topological sort (useful to figure order to populate a database):
-{{
+```
 DataSet ds = new MyDataSet(); // your dataset
 var graph = ds.ToGraph();  // wraps the dataset into a DataSetGraph
 foreach(DataTable table in graph.TopologicalSort()) // applies a topological sort to the dataset graph
     Console.WriteLine(table.TableName); // in which order should we delete the tables?
-}}
+```
 ##### History 
 * QuickGraph 3.6. Portable Class Library support.
 * QuickGraph 3.3.51106.0 available on nuget, no more support for .NET 2.0.
