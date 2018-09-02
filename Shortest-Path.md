@@ -13,7 +13,6 @@ Depending on the properties of the weights and the graph, different algorithms c
 The [AlgorithmExtensions](AlgorithmExtensions) contains extension methods to compute the shortest path without the ugly details.
 
 ```
-[C#](C#)
 IVertexAndEdgeListGraph<int, Edge<int>> cities = ...; // a graph of cities
 Func<Edge<int>, double> cityDistances = ...; // a delegate that gives the distance between cities
 
