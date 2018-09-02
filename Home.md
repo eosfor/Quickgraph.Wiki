@@ -41,6 +41,7 @@ The design of QuickGraph is inspired from the [Boost Graph Library](Boost-Graph-
 
 ##### Where to go next?
 
+* [Table of Contents](Documentation)
 * [Developer Manual](Developer-Manual)
 * [FAQ](FAQ)
 * [Peli's blog](http://blog.dotnetwiki.org)
