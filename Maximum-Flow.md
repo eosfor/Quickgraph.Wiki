@@ -2,7 +2,7 @@
 
 The [Edmond and Karp](http://en.wikipedia.org/wiki/Edmonds-Karp_algorithm) algorithm computes a maximum flow for directed graph with positive capacities and flows. 
 
-{{
+```
 // we need a graph, a source and a sink
 IMutableVertexAndEdgeListGraph<TVertex,TEdge> graph = ...;
 TVertex source = ...;
@@ -24,4 +24,4 @@ double flow = AlgorithmExtensions.MaximumFlowEdmondsKarp<TVertex, TEdge>(
     source, sink,
     out flowPredecessors,
     edgeFactory);
-}}
+```
