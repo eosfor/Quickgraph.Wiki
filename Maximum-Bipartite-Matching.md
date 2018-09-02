@@ -3,7 +3,7 @@
 The [Maximum Bipartite Matching Algorithm](http://en.wikipedia.org/wiki/Matching_(graph_theory)#Maximum_matchings_in_bipartite_graphs) problem arises in many real world situations.  
 It is currently implemented by [transforming the input graph](http://en.wikipedia.org/wiki/Maximum_flow_problem#Maximum_cardinality_bipartite_matching) to a maximum flow graph, and then using the MaximumFlowEdmondsKarp algorithm
 
-{{
+```
 // we need a graph and two sets of vertices
 IMutableVertexAndEdgeListGraph<TVertex,TEdge> graph = ...;
 
@@ -23,5 +23,4 @@ var maxMatch = new MaximumBipartiteMatchingAlgorithm<TVertex, TEdge>(
 
 // Use the MatchedEdges property to access the computed maximum match
 ProcessResult(maxMatch.MatchedEdges);
-
-}}
+```
