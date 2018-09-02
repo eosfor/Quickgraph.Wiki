@@ -4,7 +4,7 @@ This is a variation of the [Shortest Path](Shortest-Path) algorithm where not on
 
 The [Hoffman-Pavlet](http://portal.acm.org/citation.cfm?doid=320998.321004) algorithm provides an implementation this problem for directed weight graph with positive weights.
 
-{{
+```
 IBidirectionalGraph<TVertex, TEdge> g = ...;
 Func<TEdge, double> edgeWeights = ...;
 TVertex source = ...;
@@ -13,4 +13,4 @@ int pathCount = 5;
 
 foreach(IEnumerable<TEdge> path in g.RankedShortestPathHoffman(g, edgeWeights, source, target, 5))
     ...
-}}
+```
