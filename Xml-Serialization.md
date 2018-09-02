@@ -1,11 +1,11 @@
 #### Xml Serialization
 
-QuickGraph supports loading and saving graphs to and from Xml. The implementation builds on top of {{XmlReader}} and {{XmlWriter}} and is located in the {{SerializationExtensions}} class from the {{QuickGraph.Serialization}} namespace.
+QuickGraph supports loading and saving graphs to and from Xml. The implementation builds on top of `XmlReader` and `XmlWriter` and is located in the `SerializationExtensions` class from the `QuickGraph.Serialization` namespace.
 
 ##### Serializing graphs
 
-To serialize a graph, call the {{SerializeToXml}} extension methods with an {{XmlWriter}} instance and delegates that can map vertices and edges to an identifier string. The serialization method also supports custom delegate to write additional information per vertex, edge.
-{{
+To serialize a graph, call the `SerializeToXml` extension methods with an `XmlWriter` instance and delegates that can map vertices and edges to an identifier string. The serialization method also supports custom delegate to write additional information per vertex, edge.
+```
 class MyVertex {
     public int ID { get;set; } 
 }
@@ -22,10 +22,10 @@ using(var xwriter = XmlWriter.Create(...))
         AlgorithmExtensions.GetEdgeIdentity(graph), // let QuickGraph give an id to edges
         "graph", "myvertex", "myedge", "" // names of the graph, vertex, node xml tags and the namespace uri
         );
-}}
+```
 #### Deserializing graphs
 
-To deserialize a graph, create the graph instance and call the {{DeserializeFromXml}}.
+To deserialize a graph, create the graph instance and call the `DeserializeFromXml`.
 
 ##### Serializing Custom Fields
 
