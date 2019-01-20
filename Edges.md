@@ -22,4 +22,4 @@ In undirected graphs, the order of the source or target vertices should not matt
 	* `TaggedUndirectedEdge<TVertex,TTag>`, holds a tag,
 * structs
 	* `SUndirectedEdge<TVertex>`, an immutable edge,
-	* `STaggedUndirectedEdge<TVertex, TTag>`, holds a tag
+	* `SUndirectedTaggedEdge<TVertex, TTag>`, holds a tag
