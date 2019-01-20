@@ -10,7 +10,7 @@ var graph = edges.ToAdjacencyGraph<int, SEdge<int>>(edges);
 ```
 
 ##### Create a graph instance
-Let us assume we need integer vertices and edges tagged with string. Int is the vertex type and we can use the MarkedEdge generic type for the edge type:
+Let us assume we need integer vertices and edges tagged with string. Int is the vertex type and we can use the TaggedEdge generic type for the edge type:
 * `TVertex` type: `int`
 * `TEdge` type using `TaggedEdge<Vertex,Marker>: TaggedEdge<int, string>`
 ```
