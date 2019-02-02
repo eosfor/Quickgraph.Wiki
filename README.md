@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Overview](/Overview)
+* [Overview](Overview.md)
 * [Graph Theory Reminder](Graph-Theory-Reminder)
 * Concepts
   * [Graph Concepts](Graph-Concepts)
