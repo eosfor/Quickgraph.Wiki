@@ -7,7 +7,7 @@
 
 ## Identify the vertex and edge types
 
-The vertex type can be any type as all QuickGraph datastructure are generic. The edge type must implement the `IEdge<TVertex>` interface:
+The vertex type can be any type as all QuickGraph data structure are generic. The edge type must implement the `IEdge<TVertex>` interface:
 
 ```csharp
 class FooVertex {} // custom vertex type
