@@ -6,12 +6,12 @@ While a vertex could be any type with QuickGraph, the edge type must implement `
   * ```Edge<TVertex>```, an vanilla implementation,
   * ```EquatableEdge<TVertex>```, implements ```IEquatable<EquatableEdge<TVertex>>```,
   * ```TaggedEdge<TVertex,TTag>```, holds a tag,
-  * ```TaggedEquatableEdge<TVertex,TTag>```, equatable and holds a tag,
+  * ```TaggedEquatableEdge<TVertex,TTag>```, equitable and holds a tag,
 * structs
   * ```SEdge<TVertex>```, an immutable edge,
   * ```SEquatableEdge<TVertex>```, a struct that implements ```IEquatable<SEquatableEdge<TVertex>>```,
   * ```STaggedEdge<TVertex, TTag>```, holds a tag
-  * ```STaggedEquatableEdge<TVertex,TTag>```, equatable and holds a tag,
+  * ```STaggedEquatableEdge<TVertex,TTag>```, equitable and holds a tag,
 
 The ```struct``` based edge will provide better performance and should be used when you do not plan to use custom edges. Of course, you can always implement your own version ```IEdge<TVertex>```. Tagged edges also implement ```ITagged<TTag>```.
 

@@ -51,6 +51,6 @@
   * [GraphML Serialization](GraphML-Serialization)
   * [Xml Serialization](Xml-Serialization)
 * [Visualization](Visualization)
-  * [Visualization Using MsAgl](Visualization-Using-MsAgl)
+  * [Visualization Using MSAGL](Visualization-Using-MsAgl)
   * [Visualization Using Glee](Visualization-Using-Glee)
   * [Visualization Using Graphviz](Visualization-Using-Graphviz)

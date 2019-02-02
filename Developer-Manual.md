@@ -14,7 +14,7 @@
 
 As you may notice, the same codebase is used for .net 2.0 and .net 3.5. This means that anything that belongs to ```System.Core``` must be duplicated in QuickGraph conditionally. In that sense,
 
-* do not use Linq. If you do, add the required method in the ```Enumerable``` type.
+* do not use LINQ. If you do, add the required method in the ```Enumerable``` type.
 * put the ```this``` of extenion methods in an ```#ifdef``` region.
 
 ```csharp
@@ -26,4 +26,4 @@ As you may notice, the same codebase is used for .net 2.0 and .net 3.5. This mea
 ## External tools
 
 * [Code Contracts](https://github.com/Microsoft/CodeContracts) (optional)
-* [Pex](http://research.microsoft.com/Pex/downloads.aspx) (required)
+* [PEX](http://research.microsoft.com/Pex/downloads.aspx) (required)
