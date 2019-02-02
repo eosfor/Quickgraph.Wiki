@@ -2,8 +2,8 @@
 
 Let us illustrate how algorithms work by applying a [depth-first-search](http://en.wikipedia.org/wiki/Depth-first_search) algorithm on a simple graph.
 
-When possible, a depth-first traversal chooses a vertex adjacent to the current vertex to visit next. If all adjacent vertices have already been discovered, or there are no adjacent vertices, then the algorithm backtracks to the last vertex that had undiscovered neighbors. Once all reachable vertices have been visited, the algorithm selects from any remaining undiscovered vertices and continues the traversal. The algorithm finishes when all vertices have been visited. 
-Depth-first search is useful for categorizing edges in a graph, and for imposing an ordering on the vertices. 
+When possible, a depth-first traversal chooses a vertex adjacent to the current vertex to visit next. If all adjacent vertices have already been discovered, or there are no adjacent vertices, then the algorithm backtracks to the last vertex that had undiscovered neighbors. Once all reachable vertices have been visited, the algorithm selects from any remaining undiscovered vertices and continues the traversal. The algorithm finishes when all vertices have been visited.
+Depth-first search is useful for categorizing edges in a graph, and for imposing an ordering on the vertices.
 
 The depth-first-search algorithm is part of a family of graph algorithms that colorize vertices. By convention such algorithms always use the same 3 color markers:
 
@@ -43,13 +43,13 @@ dfs.Compute();
   * `ExamineEdge(u,v)`,
   * `TreeEdge(u,v)`
 
-![2](Depth%20First%20Search%20Example_dfsvisit.png) 
+![2](Depth%20First%20Search%20Example_dfsvisit.png)
 
 * Visiting `v` vertex,
 
 ![3](Depth%20First%20Search%20Example_dfsvisitv.png)
 
-* Visiting `y` vertex, 
+* Visiting `y` vertex,
 
 ![4](Depth%20First%20Search%20Example_dfsvisity.png)
 
@@ -69,7 +69,7 @@ dfs.Compute();
 
 ![8](Depth%20First%20Search%20Example_dfsfinishvertex.png)
 
-The figures above show when the events are called. The events are used by the observers to record data. For example, using the [TreeEdge](TreeEdge) event one can extract a tree out of the graph. The tree is recorded under the form of a dictionary associating each vertex with it’s predecessor 
+The figures above show when the events are called. The events are used by the observers to record data. For example, using the [TreeEdge](TreeEdge) event one can extract a tree out of the graph. The tree is recorded under the form of a dictionary associating each vertex with it’s predecessor
 
 ```csharp
 dfs.TreeEdge += new EdgeEventArgs<Vertex,Edge>(this.treeEdge);
