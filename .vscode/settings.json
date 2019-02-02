@@ -2,8 +2,12 @@
     "cSpell.words": [
         "Graphviz",
         "MSAGL",
+        "ifdef",
+        "linq",
         "nuget",
+        "populator",
         "quickgraph",
+        "struct",
         "warshall"
     ]
 }

@@ -7,9 +7,9 @@ While a vertex could be any type with QuickGraph, the edge type must implement `
   * ```EquatableEdge<TVertex>```, implements ```IEquatable<EquatableEdge<TVertex>>```,
   * ```TaggedEdge<TVertex,TTag>```, holds a tag,
   * ```TaggedEquatableEdge<TVertex,TTag>```, equitable and holds a tag,
-* structs
+* structures
   * ```SEdge<TVertex>```, an immutable edge,
-  * ```SEquatableEdge<TVertex>```, a struct that implements ```IEquatable<SEquatableEdge<TVertex>>```,
+  * ```SEquatableEdge<TVertex>```, a `struct` that implements ```IEquatable<SEquatableEdge<TVertex>>```,
   * ```STaggedEdge<TVertex, TTag>```, holds a tag
   * ```STaggedEquatableEdge<TVertex,TTag>```, equitable and holds a tag,
 
@@ -22,6 +22,6 @@ In undirected graphs, the order of the source or target vertices should not matt
 * classes
   * ```UndirectedEdge<TVertex>```, an vanilla implementation,
   * ```TaggedUndirectedEdge<TVertex,TTag>```, holds a tag,
-* structs
+* structures
   * ```SUndirectedEdge<TVertex>```, an immutable edge,
   * ```SUndirectedTaggedEdge<TVertex, TTag>```, holds a tag
