@@ -34,9 +34,9 @@ public interface ISomeGraphAlgorithm<TVertex,TEdge>
 * A **cycle** is a path where the beginning vertex is equal to the end vertex.
 * A **directed acyclic graph** (DAG) is a directed graph with no cycle.
 * A **weighted directed graph** `G:(VxExW)` is a directed graph with an additional relation that associate each edge to a weight: `e -> w(e)` (for example, the distance).
-* An [adjacency graph](AdjacencyGraph) is a data structure to represent a directed graph where the out-edges of any vertex can be accessed in amortized constant time.
-* A [bidirectional graph](BidirectionalGraph) is a data structure to represent directed graph where both the out-edges and the in-edges of any vertex can be accessed in amortized constant time.
-* QuickGraph also provides data structures for [UndirectedGraph](UndirectedGraph).
+* An [adjacency graph](AdjacencyGraph.md) is a data structure to represent a directed graph where the out-edges of any vertex can be accessed in amortized constant time.
+* A [bidirectional graph](BidirectionalGraph.md) is a data structure to represent directed graph where both the out-edges and the in-edges of any vertex can be accessed in amortized constant time.
+* QuickGraph also provides data structures for UndirectedGraph.
 
 _tip:_
-The adjacency graph is implemented as a dictionary of Vertex to a collection of out-edges. When using a bidirectional graph, two dictionaries (one for in-edges, one for out-edges) have to be used, which doubles the required memory. Such data structures are most efficient for sparse graphs.
+>The adjacency graph is implemented as a dictionary of Vertex to a collection of out-edges. When using a bidirectional graph, two dictionaries (one for in-edges, one for out-edges) have to be used, which doubles the required memory. Such data structures are most efficient for sparse graphs.
