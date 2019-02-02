@@ -14,7 +14,7 @@ class MyEdge : IEdge<MyVertex> {
     string Name { get; set; }
     string Tag { get; set; }
 }
-var g = new AdjacencyGraph<MyVexte, MyEdge>();
+var g = new AdjacencyGraph<MyVertex, MyEdge>();
 ...
 using(var xwriter = XmlWriter.Create(...))
     g.SerializeToXml(
