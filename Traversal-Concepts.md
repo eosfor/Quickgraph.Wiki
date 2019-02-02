@@ -1,6 +1,6 @@
-#### Traversal Concepts
+# Traversal Concepts
 
-The **traversal concepts** define the different way the vertices and edges of a graph can be accessed and enumerated. 
+The **traversal concepts** define the different way the vertices and edges of a graph can be accessed and enumerated.
 
 * _Tip:_ All the interfaces depend on 2 generic parameters `TVertex` and `TEdge`, where `TEdge` has the additional constraint of implementing `IEdge<TVertex>`.
 
@@ -13,4 +13,4 @@ Each of these interfaces is described below (generic arguments have been omitted
 * `IVertexAndEdgeListGraph` merges IVertexListGraph and IEdgeListGraph functionalities
 * `IBidirectionalGraph` defines a vertex list graph that also publishes the in-edges. Such graph can be used to explore a graph in a both directions.
 
-![](Traversal Concepts_TraversalInterfaces.png)
+![traversal_concepts](Traversal%20Concepts_TraversalInterfaces.png)

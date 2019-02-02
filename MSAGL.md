@@ -1,8 +1,8 @@
-#### MSAGL
+# MSAGL
 
 Microsoft Automatic Graph Layout (fully managed, was [GLEE](GLEE))
 
-* [http://research.microsoft.com/research/msagl/codesamples.aspx](http://research.microsoft.com/research/msagl/codesamples.aspx)
+* [MSAGL samles](http://research.microsoft.com/research/msagl/codesamples.aspx)
 
 For questions about MSAGL (and GLEE) use the following forums
 

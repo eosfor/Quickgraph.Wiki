@@ -1,9 +1,10 @@
-### Incremental Connected Components
+# Incremental Connected Components
 
 This algorithm maintains a set of connected components for growing graphs (added edges only). Under the hood, it uses a [disjoint set](http___en.wikipedia.org_wiki_Disjoint-set_data_structure) data structure to keep track of the components.
 
 The `AlgorithmExtensions.IncrementConnectedComponents` returns a delegate that returns the update component count and map on each call. The delegate is a `Func<KeyValuePair<int, IDictionary<TVertex, int>>` where `Key` is the component count and `Value` is the map of vertices to component index.
-```
+
+```csharp
 var g = new AdjacencyGraph<int, SEdge<int>>();
 g.AddVertexRange(new int[]() { 0, 1, 2, 3 });
 Func<KeyValuePair<int, IDictionary<TVertex, int>> components = AlgorithmExtensions.IncrementalConnectedComponents(g);

@@ -1,5 +1,7 @@
-#### QuickGraph logos
-
-* ![](Logos_quickgraph.png)
-* ![](Logos_quickgraph.banner.png)
-* ![](Logos_quickgraph.hq.png)
+# QuickGraph logos
+
+* ![quickgraph](Logos_quickgraph.png)
+
+* ![banner](Logos_quickgraph.banner.png)
+
+* ![hdlogo](Logos_quickgraph.hq.png)

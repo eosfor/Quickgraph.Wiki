@@ -1,10 +1,10 @@
-# **MsAgl is no longer supported!**
+# **MSAGL is no longer supported!** (TODO: need some clarification here, as MSAGL is GLEE?)
 
-#### Visualization Using MsAgl
+## Visualization Using MSAGL
 
-QuickGraph supports [MsAgl](MsAgl) to render the graphs. The `QuickGraph.MsAgl` assembly contains specialize 'populator' that convert a QuickGraph graph into a MsAgl graph.
+QuickGraph supports [MSAGL](MsAgl) to render the graphs. The `QuickGraph.MsAgl` assembly contains specialize 'populator' that convert a QuickGraph graph into a MSAGL graph.
 
-```
+```csharp
 IVertexAndEdgeListGraph<string, Edge<string>> g = ...;
 
 var populator = MsAglGraphExtensions.CreateMsaglPopulator<string, Edge<string>>(g);
@@ -12,10 +12,10 @@ populator.Compute();
 Graph g = populator.GleeGraph; // we have the graph :)
 ```
 
-Once you have the Glee graph, you can use the MsAgl rendering support or built-in visualizer controll to view it.
+Once you have the Glee graph, you can use the MSAGL rendering support or built-in visualizer control to view it.
 
-##### Customizing the vertices look
+## Customizing the vertices look
 
-Hook to the `VertexAdded`, `EdgeAdded` events to get a hold on the MsAgl nodes and edges as they are created.
+Hook to the `VertexAdded`, `EdgeAdded` events to get a hold on the MSAGL nodes and edges as they are created.
 
-**WARNING: You must have a copy of MsAgl in order to get this to work!**
+**WARNING: You must have a copy of MSAGL in order to get this to work!**

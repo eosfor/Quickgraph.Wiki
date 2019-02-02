@@ -1,5 +1,5 @@
-#### Glee - now called MSAGL
+# Glee - now called MSAGL
 
 Graph layout engine (fully managed!).
 
-* [http://research.microsoft.com/users/levnach/GLEEWebPage.htm](http://research.microsoft.com/users/levnach/GLEEWebPage.htm)
+* [GLEE/MSAGL](http://research.microsoft.com/users/levnach/GLEEWebPage.htm)

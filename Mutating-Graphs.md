@@ -1,9 +1,10 @@
-### Mutating Graphs
+# Mutating Graphs
 
 Most data structures are mutable and support batched addition/removal of vertices/edges.
 
-#### Removing vertices with a predicate
-```
+## Removing vertices with a predicate
+
+```csharp
 var g = new AjacencyGraph<string, Edge<string>>();
 ...
 // remove any vertex starting with foo

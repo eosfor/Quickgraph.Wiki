@@ -1,4 +1,4 @@
-#### Mutation concepts
+# Mutation concepts
 
 The **mutation concepts** define the different ways a graph can be modified. The hierarchy of mutation interface duplicates the traversal hierarchy and adds functionality to mutate the graph.
 

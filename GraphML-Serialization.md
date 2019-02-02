@@ -1,35 +1,38 @@
-#### GraphML Serialization
+# GraphML Serialization
 
 [GraphML](http://graphml.graphdrawing.org/) is a comprehensive and easy-to-use file format for graphs. QuickGraph supports loading and saving directed graphs to this format. The GraphML serialization APIs are exposed through the `GraphMLExtensions` extension methods (in `QuickGraph.Serialization`).
 
 The serialization code uses dynamic code generation to provide high performance in reading and writing custom properties.
 
-##### Serializing graphs
+## Serializing graphs
 
 To serialize a graph, simply call the `SerializeToGraphML` extension methods with an `XmlWriter` instance.
-```
+
+```csharp
 var g = new AdjacencyGraph<int, Edge<int>>();
 ...
 using(var xwriter = XmlWriter.Create(...))
     g.SerializeToGraphML(xwriter);
 ```
-#### Deserializing graphs
+
+## Deserializing graphs
 
 To deserialize a graph, create the graph instance and call the `DeserializeFromGraphML`:
-```
+
+```csharp
 var g = new AdjacencyGraph<int, Edge<int>>();
 using(var xreader = XmlReader.Create(...))
-     g.DeserializeFromGraphML(xreader, 
-         id => int.Parse(id), 
+     g.DeserializeFromGraphML(xreader,
+         id => int.Parse(id),
          (source, target, id) => new Edge<int>(source, target)
      );
 ```
 
-##### Serializing Custom Fields
+## Serializing Custom Fields
 
-The serializer supports the `XmlAttributeAttribute` attribute on public properties of the vertex, edge and graph types. These properties will be declared and serialized in the GraphML stream. The supported property types are `bool`, `int`, `long`, `float`, `double` and `string`. 
+The serializer supports the `XmlAttributeAttribute` attribute on public properties of the vertex, edge and graph types. These properties will be declared and serialized in the GraphML stream. The supported property types are `bool`, `int`, `long`, `float`, `double` and `string`.
 
-```
+```csharp
 class IntEdge : Edge<int> {
    ...
    [XmlAttribute("name")](XmlAttribute(_name_))
@@ -38,7 +41,8 @@ class IntEdge : Edge<int> {
 ```
 
 Default values can also be specified for the properties by using the {{DefaultValueAttribute}} attribute:
-```
+
+```csharp
    ...
    [XmlAttribute("name")](XmlAttribute(_name_))
    [DefaultValue("unknown")](DefaultValue(_unknown_))

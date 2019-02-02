@@ -1,4 +1,4 @@
-#### Depth First Search Example
+# Depth First Search Example
 
 Let us illustrate how algorithms work by applying a [depth-first-search](http://en.wikipedia.org/wiki/Depth-first_search) algorithm on a simple graph.
 
@@ -16,10 +16,10 @@ _tip:_ In QuickGraph, algorithms that colorize vertices implement the `IVertexCo
 The depth first search is implemented by the `DepthFirstSearchAlgorithm` class. This class exposes a number of events (not all are detailed here) that are used by observers:
 
 * [InitializeVertex](InitializeVertex), invoked on each vertex before starting the computation,
-* [DiscoverVertex](DiscoverVertex), invoked when a vertex is encountered for the first time, 
-* [ExamineEdge](ExamineEdge), invoked on every out-edge of each vertex after it is discovered, 
-* [TreeEdge](TreeEdge), invoked on each edge as it becomes a member of the edges that form the search tree, 
-* [FinishVertex](FinishVertex), invoked on a vertex after all of its out edges have been added to the search tree and all of the adjacent vertices have been discovered (but before their out edges have been examined). 
+* [DiscoverVertex](DiscoverVertex), invoked when a vertex is encountered for the first time,
+* [ExamineEdge](ExamineEdge), invoked on every out-edge of each vertex after it is discovered,
+* [TreeEdge](TreeEdge), invoked on each edge as it becomes a member of the edges that form the search tree,
+* [FinishVertex](FinishVertex), invoked on a vertex after all of its out edges have been added to the search tree and all of the adjacent vertices have been discovered (but before their out edges have been examined).
 
 The application of the depth first search to a simple graph is detailed in the figures below. The code to achieve this looks (more or less) as follows:
 
