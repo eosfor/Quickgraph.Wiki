@@ -10,4 +10,4 @@ foreach(var vertex in graph.Vertices)
         Console.WriteLine(edge);
 ```
 
-If you only need to access out-edges, consider using the [AdjacencyGraph](AdjacencyGraph), as it uses half the memory.
+If you only need to access out-edges, consider using the [AdjacencyGraph](AdjacencyGraph.md), as it uses half the memory.
