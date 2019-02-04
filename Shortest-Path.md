@@ -36,7 +36,7 @@ This sample shows how to compute the shortest path between different cities.
 
 ```csharp
 // creating the algorithm instance
-var dijkstra = 
+var dijkstra =
     new DijkstraShortestPathAlgorithm<int,Edge<int>>(cities, cityDistances);
 
 // creating the observer
