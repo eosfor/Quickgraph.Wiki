@@ -8,7 +8,7 @@ As functionality always comes with a price (there’s no free lunch), it is impo
 
 There are two main families of graph concepts in QuickGraph:
 
-* [Traversal Concepts](Traversal-Concepts)
-* [Mutation Concepts](Mutation-Concepts)
+* [Traversal Concepts](Traversal-Concepts.md)
+* [Mutation Concepts](Mutation-Concepts.md)
 
-Graph concepts have been introduced by the [Boost Graph Library](Boost-Graph-Library) authors and the design of QuickGraph follows their design.
+Graph concepts have been introduced by the [Boost Graph Library](Boost-Graph-Library.md) authors and the design of QuickGraph follows their design.

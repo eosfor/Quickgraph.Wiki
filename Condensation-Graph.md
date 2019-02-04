@@ -6,5 +6,5 @@ The [AlgorithmExtensions](AlgorithmExtensions.md) class provide various helpers,
 
 ```csharp
 IVertexAndEdgeListGraph<TVertex, TEdge> g = ...; // input graph
-var condensated = g.CondenstateWeaklyConnected();
+var condensed = g.CondenstateWeaklyConnected();
 ```

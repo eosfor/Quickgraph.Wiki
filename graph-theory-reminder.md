@@ -34,8 +34,8 @@ public interface ISomeGraphAlgorithm<TVertex,TEdge>
 * A **cycle** is a path where the beginning vertex is equal to the end vertex.
 * A **directed acyclic graph** (DAG) is a directed graph with no cycle.
 * A **weighted directed graph** `G:(VxExW)` is a directed graph with an additional relation that associate each edge to a weight: `e -> w(e)` (for example, the distance).
-* An [adjacency graph](AdjacencyGraph) is a data structure to represent a directed graph where the out-edges of any vertex can be accessed in amortized constant time.
-* A [bidirectional graph](BidirectionalGraph) is a data structure to represent directed graph where both the out-edges and the in-edges of any vertex can be accessed in amortized constant time.
+* An [adjacency graph](AdjacencyGraph.md) is a data structure to represent a directed graph where the out-edges of any vertex can be accessed in amortized constant time.
+* A [bidirectional graph](BidirectionalGraph.md) is a data structure to represent directed graph where both the out-edges and the in-edges of any vertex can be accessed in amortized constant time.
 * QuickGraph also provides data structures for [UndirectedGraph](UndirectedGraph).
 
 _tip:_

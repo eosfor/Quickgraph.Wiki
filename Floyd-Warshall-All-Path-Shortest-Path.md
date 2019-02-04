@@ -10,7 +10,7 @@ var fw = new FloydWarshallAllShortestPathAlgorithm<TVertex, TEdge>(g, weights);
 // compute
 fw.Compute();
 
-// get interresting paths,
+// get interesting paths,
 foreach(var source in g.Vertices)
     foreach(var target in g.Vertices)
     {

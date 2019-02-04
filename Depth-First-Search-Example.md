@@ -69,7 +69,7 @@ dfs.Compute();
 
 ![8](Depth%20First%20Search%20Example_dfsfinishvertex.png)
 
-The figures above show when the events are called. The events are used by the observers to record data. For example, using the [TreeEdge](TreeEdge) event one can extract a tree out of the graph. The tree is recorded under the form of a dictionary associating each vertex with it’s predecessor
+The figures above show when the events are called. The events are used by the observers to record data. For example, using the [TreeEdge](TreeEdge.md) event one can extract a tree out of the graph. The tree is recorded under the form of a dictionary associating each vertex with it’s predecessor
 
 ```csharp
 dfs.TreeEdge += new EdgeEventArgs<Vertex,Edge>(this.treeEdge);
@@ -88,7 +88,7 @@ var observer =  new VertexPredecessorRecorderObserver<Vertex,Edge>();
 using(ObserverScope.Create(dfs, observer)) // attach, detach to dfs events
     dfs.Compute();
 
-// oberser.Predecessors is a IDictionary<Vertex,Edge> that link vertices
+// observer.Predecessors is a IDictionary<Vertex,Edge> that link vertices
 // to their parent edges
 …
 ```

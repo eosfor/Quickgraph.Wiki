@@ -29,13 +29,13 @@ You may have already a dictionary on hand that represents a graph, where the key
 ```csharp
 Dictionary<int, int[]()> dic = ...; // vertex -> target edges
 var graph = dic.ToVertexAndEdgeListGraph(
-    kv => Array.ConvertAll(kv.Value, v => new SEquatableEdge<int>(kv.Key, v))
+    kv => Array.ConvertAll(kv.Value, v => new SEquitableEdge<int>(kv.Key, v))
     );
 
 // without extension methods
 var graph = GraphExtensions.ToVertexAndEdgeListGraph(
     dic,
-    kv => Array.ConvertAll(kv.Value, v => new SEquatableEdge<int>(kv.Key, v))
+    kv => Array.ConvertAll(kv.Value, v => new SEquitableEdge<int>(kv.Key, v))
     );
 ```
 
