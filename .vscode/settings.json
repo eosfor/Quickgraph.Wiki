@@ -1,8 +1,12 @@
 {
     "cSpell.words": [
+        "Dijsktra",
         "Graphiz",
         "Graphviz",
         "MSAGL",
+        "acyclic",
+        "deserialize",
+        "deserializing",
         "graphconcepts",
         "ifdef",
         "linq",
@@ -11,6 +15,7 @@
         "quickgraph",
         "readonly",
         "struct",
-        "warshall"
+        "warshall",
+        "xreader"
     ]
 }

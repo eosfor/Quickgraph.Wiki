@@ -2,12 +2,12 @@
 
 ![banner](Home_quickgraph.banner.png)
 
-**QuickGraph** provides _generic_ directed/undirected graph data structures and algorithms for .NET. QuickGraph comes with algorithms such as depth first search, breath first search, A** search, shortest path, k-shortest path, maximum flow, minimum spanning tree, least common ancestors, etc... QuickGraph supports [MSAGL](MSAGL), [GLEE](GLEE), and [Graphviz](Graphviz) to render the graphs, serialization to [GraphML](GraphML), etc...
+**QuickGraph** provides _generic_ directed/undirected graph data structures and algorithms for .NET. QuickGraph comes with algorithms such as depth first search, breath first search, A** search, shortest path, k-shortest path, maximum flow, minimum spanning tree, least common ancestors, etc... QuickGraph supports [MSAGL](MSAGL.md), [GLEE](GLEE.md), and [Graphviz](Graphviz.md) to render the graphs, serialization to [GraphML](GraphML.md), etc...
 
 * **QuickGraph** is a portable library, i.e. supports .Net 4.0, Silverlight 4.0, Windows Phone 7, XBox 360 and Windows 8 Metro apps. QuickGraph is annotated with [Code Contracts](http://research.microsoft.com/contracts).
 * Other projects using QuickGraph
 
-  * [Reflector.Graph Addin](http://reflectoraddins.codeplex.com/)
+  * [Reflector.Graph Add-in](http://reflectoraddins.codeplex.com/)
   * [Graph#, layout algorithms](http://graphsharp.codeplex.com/)
   * [Jolt.Net, a backing store for a generic finite state machine implementation](http://jolt.codeplex.com)
   * [JSL StyleCop, Custom rules for Microsoft's StyleCop utility](http://jslstylecop.codeplex.com/)
@@ -46,7 +46,7 @@ The design of QuickGraph is inspired from the [Boost Graph Library](Boost-Graph-
 
 ## Where to go next
 
-* [Table of Contents](Documentation)
-* [Developer Manual](Developer-Manual)
-* [FAQ](FAQ)
+* [Table of Contents](Documentation.md)
+* [Developer Manual](Developer-Manual.md)
+* [FAQ](FAQ.md)
 * [Peli's blog](http://blog.dotnetwiki.org)

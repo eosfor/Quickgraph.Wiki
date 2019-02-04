@@ -4,4 +4,4 @@ GraphML is a comprehensive and easy-to-use file format for graphs. It consists o
 
 * [GraphML/](http://graphml.graphdrawing.org/)
 
-QuickGraph [supports 'native' serialization to and from GraphML](GraphML-Serialization).
+QuickGraph [supports 'native' serialization to and from GraphML](GraphML-Serialization.md).

@@ -21,7 +21,7 @@ int sourceCity = 0; // starting city
 int targetCity = 0; // ending city
 
 // vis can create all the shortest path in the graph
-// and returns a delegate that can be used to retreive the graphs
+// and returns a delegate that can be used to retrieve the graphs
 TryGetFunc<int, IEnumerable<int>> tryGetPath = cities.ShortestPathsDijkstra(cityDistances, sourceCity);
 // enumerating path to targetCity, if any
 IEnumerable<Edge<int>> path;
